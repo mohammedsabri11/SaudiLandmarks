@@ -1,0 +1,105 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.guideteee.myapplication.LogIn">
+
+    <RelativeLayout
+        xmlns:android = "http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height = "match_parent"
+        android:background="#130011"
+        >
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_centerHorizontal="true"
+
+            android:layout_marginTop="46dp"
+
+            app:srcCompat="@mipmap/loginicon" />
+
+        <EditText
+            android:layout_width = "211dp"
+            android:layout_height = "31dp"
+            android:id = "@+id/advisornamelogin"
+            android:hint = "Advisor Name"
+
+            android:ellipsize="end"
+            android:textSize="12dp"
+            android:textColorHint = "#ffffff"
+            android:layout_centerHorizontal="true"
+            android:ems="11"
+            android:textColor="#ffffff"
+            android:background="#130011"
+            android:layout_marginTop = "50dp"
+            android:layout_below = "@+id/imageView"
+            android:drawableLeft="@drawable/drawnameicon"
+            android:inputType="textPersonName"/>
+
+
+        <EditText
+            android:id="@+id/passwordlog"
+            android:layout_width="211dp"
+            android:textSize="12dp"
+            android:layout_height="31dp"
+            android:layout_alignLeft="@+id/advisornamelogin"
+            android:layout_alignStart="@+id/advisornamelogin"
+            android:layout_below="@+id/advisornamelogin"
+            android:layout_marginTop="20dp"
+            android:background="#130011"
+            android:drawableLeft="@drawable/lockpassw"
+            android:ems="10"
+            android:textColor="#ffffff"
+            android:hint="Password"
+            android:inputType="textPassword"
+            android:textColorHint="#ffffff"
+            />
+
+        <android.support.v7.widget.CardView
+            android:layout_width="222dp"
+            android:layout_height="31dp"
+            android:layout_below="@+id/passwordlog"
+            android:layout_centerHorizontal="true"
+            app:cardBackgroundColor="#ff4ff6"
+            android:elevation="12dp"
+
+            android:id="@+id/loginlogin"
+            app:cardCornerRadius="25dp"
+            android:layout_marginTop = "110dp"
+            >
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/textView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="21dp"
+                    android:textColor="#ffffff"
+                    android:layout_centerInParent="true"
+                    android:text="Log In" />
+            </RelativeLayout>
+        </android.support.v7.widget.CardView>
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="33dp"
+            android:layout_alignLeft="@+id/imageView"
+            android:layout_alignParentBottom="true"
+
+            android:layout_marginBottom="39dp"
+            android:textColor="#ffffff"
+            android:layout_centerHorizontal="true"
+            android:text="Register Here" />
+
+
+    </RelativeLayout>
+
+</FrameLayout>

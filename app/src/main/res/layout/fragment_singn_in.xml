@@ -1,0 +1,122 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.guideteee.myapplication.SingnIn">
+
+    <RelativeLayout
+        xmlns:android = "http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height = "match_parent"
+        android:background="@color/backgroundtextcolor"
+        >
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="66dp"
+            android:layout_height="111dp"
+            android:layout_centerHorizontal="true"
+
+            android:layout_marginTop="26dp"
+
+            app:srcCompat="@mipmap/signinicon" />
+
+        <EditText
+            android:layout_width = "211dp"
+            android:layout_height = "31dp"
+            android:id = "@+id/advisorname_singn_in"
+            android:hint = "Advisor Name"
+            android:layout_alignParentLeft="true"
+
+            android:textSize="16dp"
+            android:textColorHint = "#ffffff"
+android:layout_alignLeft="@+id/imageView"
+            android:ems="11"
+            android:background="@color/backgroundtextcolor"
+            android:layout_marginTop = "36dp"
+            android:layout_marginLeft="22dp"
+            android:layout_below = "@+id/imageView"
+            android:drawableLeft="@drawable/user"
+            android:inputType="textPersonName"/>
+
+
+
+        <EditText
+            android:layout_width="211dp"
+            android:layout_height="31dp"
+            android:inputType="textPassword"
+            android:drawableLeft="@drawable/lock"
+            android:ems="10"
+
+            android:background="@color/backgroundtextcolor"
+            android:id="@+id/password1_singn_in"
+            android:layout_below="@+id/advisorname_singn_in"
+            android:layout_marginTop="26dp"
+            android:layout_alignLeft="@+id/advisorname_singn_in"
+            android:layout_alignStart="@+id/advisorname_singn_in"
+            android:textColorHint="#ffffff"
+
+            android:hint="Password" />
+        <EditText
+            android:layout_width="211dp"
+            android:layout_height="31dp"
+            android:inputType="textPassword"
+            android:drawableLeft="@drawable/lock"
+            android:ems="10"
+
+            android:background="@color/backgroundtextcolor"
+            android:id="@+id/password2_singn_in"
+            android:layout_below="@+id/password1_singn_in"
+            android:layout_marginTop="26dp"
+            android:layout_alignLeft="@+id/password1_singn_in"
+            android:layout_alignStart="@+id/password1_singn_in"
+            android:textColorHint="#ffffff"
+
+            android:hint="confirm Password" />
+        <EditText
+            android:id="@+id/phoneNum"
+            android:layout_width="211dp"
+            android:layout_height="31dp"
+            android:layout_alignLeft="@+id/password2_singn_in"
+            android:layout_alignStart="@+id/password2_singn_in"
+            android:layout_below="@+id/password2_singn_in"
+            android:layout_marginTop="26dp"
+            android:ems="10"
+            android:hint="phone"
+            android:drawableLeft="@drawable/telephone"
+            android:background="@color/backgroundtextcolor"
+            android:textColorHint="#ffffff"
+            android:inputType="phone" />
+        <android.support.v7.widget.CardView
+            android:layout_width="233dp"
+            android:layout_height="36dp"
+            android:layout_below="@+id/phoneNum"
+            android:layout_centerHorizontal="true"
+            app:cardBackgroundColor="#112211"
+            android:elevation="12dp"
+            app:cardCornerRadius="35dp"
+            android:id="@+id/createAcount"
+
+            android:layout_marginTop="41dp" >
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/textView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="21dp"
+                    android:textColor="#ffffff"
+                    android:layout_centerInParent="true"
+                    android:text="Sign In" />
+            </RelativeLayout>
+        </android.support.v7.widget.CardView>
+
+
+
+
+    </RelativeLayout>
+</FrameLayout>
