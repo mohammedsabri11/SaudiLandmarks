@@ -1,1 +1,28 @@
+pluginManagement {
+    repositories {
+        google()
+        mavenCentral()
+        gradlePluginPortal()
+    }
+}
+
+dependencyResolutionManagement {
+    repositoriesMode.set(RepositoriesMode.FAIL_ON_PROJECT_REPOS)
+    repositories {
+        google()
+        mavenCentral()
+        maven {
+            url 'https://api.mapbox.com/downloads/v2/releases/maven'
+            // Only add credentials if the token is present
+            if (providers.gradleProperty("MAPBOX_DOWNLOADS_TOKEN").isPresent()) {
+                credentials {
+                    username = 'mapbox'
+                    password = providers.gradleProperty("MAPBOX_DOWNLOADS_TOKEN").get()
+                }
+            }
+        }
+    }
+}
+
+rootProject.name = "SaudiLandmarks"
 include ':app'
